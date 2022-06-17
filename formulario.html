@@ -1,0 +1,154 @@
+
+<!DOCTYPE html> <html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="./img/favico.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GORGUN FICHA</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src= "script.js"></script>
+    <script src= "data.php"></script>
+
+</head>
+
+<body>
+    
+<header class="cabecalho"><!--cabeçalho com titulo-->
+    <h1><b>As Crônicas de Gorgon</b> <br><i>entre dois mundos</i><br>Oficial Website</h1>
+        <p>Conto by Ulysses Cezario </br> Site by Tamer Serhan e Mateus Soares</p><br><br>
+    <div class="titulo"><h2>CADASTRO</h2></div>   
+</header>
+    
+<nav class="container"><!--navegador entre os links-->
+    <ul class="projetos"><h3>Links e referencias para seu jogo:</h3>
+        <li> <a href = "index.html">HOME</a></li>
+        <li> <a href = "jogadores.html">JOGADORES</a></li>
+        <li> <a href = "docs/map.html">GORGUN MAPA</a></li>
+        <li> <a href = "forja/forja.html">FORJA</a></li>
+        <li> <a href = "dice/dados.html">LANCE A SORTE</a></li>
+        <li> <a href = "gandah/ganda.html">GANDHA</a></li>
+        <li> <a href = "loja/loja.html">LOJAS  </a></li>
+        <li> <a href = "books/books.html">Contos de Gordun</a></li>
+        <li> <a href = "books/books.html">Biblioteca de Alcamar</a></li>
+        <li> <a href = "books/bestiario.html">Bestiario de Alcamar</a></li>   
+    </ul>
+    </nav>
+    
+<div class= "perfil-foto"> <img src="img/Gorgon_Theme.png" alt= "emblema"/></div><!--foto do logo-->
+
+
+
+<!-- AUDIO da cartilha-->
+<figure><p> Audio ambientação</p>
+    <audio controls=”controls”>
+        <source src= "./assets/skyrim/Skyrim Dovakin.mp3"/>Seu navegador não aceita a tag audio</audio>
+</figure><br/>
+
+<section><!--area cadastro-->
+<div class=" projetos"><h2>FAZENDO SEU CADASTRO</h2>
+
+    <!--server client + server side    autofocus=”autofocus”    -->
+<form  action= "data.php"  method="post">
+    <div class= "form"><h3>Insira os dados para a ficha</h3>     
+    Nome:      <input type="text"     name="nome"           required=”required”     placeholder= Digite-seu-Nome>               <br/>
+    Personagem:<input type="text"     name="personagem"     required=”required”     placeholder= Digite-o-Nome-do-personagem>   <br/>
+    Idade:     <input type="text"     name="idade"          required=”required”     placeholder= Digite-a-idade>                <br/>
+    Classe:    <input type="text"     name="classe"         required=”required”     placeholder= Digite-a-classe-do-personagem> <br/>
+    Raça:      <input type="text"     name="raça"           required=”required”     placeholder= Digite-a-raça-do-personagem>   <br/>
+    Objetivo:  <input type="text"     name="objetivo"                               placeholder= Digite-o-objetivo-resumidamente>   <br/>
+    </div><br/> 
+
+    <!--escolher ou um ou outro-->
+    <div class="form"><h4>Seu sexo é:</h4>
+        <input type= "radio" name="sexo" value="F"/>Feminino
+        <input type= "radio" name="sexo" value="M"/>Masculino
+    </div><br/><br/>
+
+    <!--caixa para escrever sobre o personagem-->
+    <div class="form"><b><h3>Contenos a historia do seu personagem:</h3></b>
+        <textarea id="story" name="story" minlength="20" maxlength= "200" spellcheck="true" wrap="hard" cols=”33”> </textarea><br/>
+        <input type="submit" value="Enviar"/>
+    </div><br/><br/> 
+
+    <!--checkbox para guildas-->
+    <div class="box-check"><h3>Qual Guilda voce ira participar??</h3> 
+        <input type="checkbox" name="guildas" value="Corolados" /> Corolados <br/>
+        <input type="checkbox" name="guildas" value="Isildur" />A ordem de Isildur<br/>
+        <input type="checkbox" name="guildas" value="Ukitsu" /> Ukitsu<br/>
+        <input type="checkbox" name="guildas" value="Thunderstrucks" /> Thunderstrucks<br/>
+        <input type="checkbox" name="guildas" value="Ludwik" /> Colégio de Ludwik de Bardos<br/>
+        <input type="checkbox" name="guildas" value="Tsuki" /> Monges Tsuki<br/>
+        <input type="checkbox" name="guildas" value="Divers" /> Divers<br/>
+        <input type="checkbox" name="guildas" value="Alqamar" /> Colégio de Alqamar<br/>
+        <input type="checkbox" name="guildas" value="Inue" /> Guerreiras Inue<br/>
+        <input type="checkbox" name="guildas" value="Albatroz" /> Guarda Albatroz<br/>             
+    </div><br/>
+  
+    <!--caixa de seleção-->
+    <div class="box-check"><h3><b>Seu Personagem Sera da Raça:</b></h3><br/> 
+        <select> 
+            <option value="DOVAH">Dovahs</option>
+            <option value="MAYOS">Mayos</option> 
+            <option value="YAVU">Yavu</option> 
+            <option value="SHANG_REN">Shang Ren</option> 
+            <option value="DAKAR">Dakar</option> 
+            <option value="YAHROST">Yahrost</option>  
+            <option value="SKOLL">Skölls</option> 
+            <option value="Argoliano">Argolianos</option> 
+            <option value="Hethita">Hethitas</option> 
+            <option value="Nauts">Skölls</option> 
+            <option value="Otawak">Otawak</option> 
+            <option value="Nyraxi">Nyraxi</option> 
+            <option value="Draconiano">Draconianos</option> 
+            <option value="Azralon">Azralon</option> 
+            <option value="Alsha">Alsha</option> 
+            <option value="Kodiak">Kodiak</option> 
+            <option value="Haida">Haidas</option> 
+            <option value="Ban">Ban</option> 
+            <option value="Gongo">Gongos</option> 
+            <option value="Yki">Yki</option> 
+            <option value="Bandar">Bandar</option> 
+            <option value="Kinghaarriano">Kinghaarrianos</option> 
+        </select>
+    </div><br/><br/> 
+                   
+<!--escolher caixa de seleção-->
+    <div class="box-check"><h3>Escolha agora uma classe para ele:</h3>
+        <input list="classes" name="classe"/>
+            <datalist class="box-check" id="classes">
+                <option value="Paladinos">
+                <option value="Samurai">
+                <option value="Rangers">
+                <option value="Shinobi">
+                <option value="Monges">
+                <option value="Spectro"> 
+                <option value="Guardião de Sopro">  
+                <option value=" Mimetico">
+                <option value="Metamorfo">
+                <option value="Tecelão">
+                <option value="Bardo">       
+            </datalist>
+    </div><br/><br/>
+
+<!-- enviando/ upload de um arquivo-->
+
+    <div class="form"><h3>Envie um arquivo para nós, uma foto do seu personagem!</h3>
+        <input name="arquivo" type="file"/><br/>
+    </div>  
+
+</form><br/><br/> 
+</div><br/><br/>
+    
+<!--    inserido uma imagem-->
+<div class="titulo"><h3> Serão criados apos o seu cadastro CARDS como esse abaixo!</h3>
+    <img class="perfil" src="img/personagens/card_Aniak.jpg" alt= "card"/> <br/> 
+</div><br/><br/><br/> 
+
+<!--botao com funcao--> 
+
+<div class="titulo"><h3>Aperte aqui para concluir seu cadastro:</h3>
+        <Input name= "botao" type = "button" value="CONLCUIDO!" id = "enviar" onclick= enviarDadosPersonagem() /><br/> 
+</div><br/><br/>
+
+</section>

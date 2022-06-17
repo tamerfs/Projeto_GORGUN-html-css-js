@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+body{
+  padding: 64px;
+  background: linear-gradient(236.85deg, #cf9a15 27.26%, #e9cd73 96.03% ) ; 
+  font-family: 'Oswald', sans-serif;
+  border-radius: 20px; 
+}
+
+.cabecalho {
+padding: 50px;
+padding-top: 5px;
+display: flex;
+justify-content: space-between;
+color: #000000;
+}
+.cabecalho b {
+  font-size: 40px;
+  color: #501e01;
+}
+.cabecalho i {
+  font-weight: 900;
+  color: #8f6227;
+}
+
+.cabecalho p {
+  padding-left: 20px;
+  padding-top: 120px;
+  font-family: cursive;
+  display: flex;   
+  color: #F6F6F6;
+  margin-right: 100px ;
+}
+
+.titulo h2 {
+  align-self: top;
+  font-weight: 700;
+  font-size: 36px;
+  padding-right: 28px;
+}
+
+.container {
+  background: #F7F7F7;
+  color: #1C1C1C;
+  box-shadow: 10px 10px 10px 10px #cac702;
+  border-radius: 20px;
+}
+.container h3 {
+margin-top: 0px ;
+color: #F7F7F7;
+font-size: x-large;
+font-family: 'Oswald', sans-serif;
+}
+.projetos a {
+  font-size: x-large;
+  font-weight: 900;
+  font-family: 'Courier New', Courier, monospace;
+  color: #383b46;
+}
+
+.game-setings b {
+  font-size: x-large;
+}
+
+.projetos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(230.65deg, #c2bdbd 27.49%, #575454 83.19%);
+  margin-top: 32px;
+  padding: 32px;
+  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42); 
+  border-radius: 20px;
+    position:relative;
+}
+
+.perfil-foto{
+  float: right;
+  opacity: 0.7;
+  list-style: none;
+  position: relative;
+ 
+}
+
+.form {
+font-size: large;
+padding: 24px;
+align-self: center;
+}
+
+.tabela {
+font-weight: 200;
+font-size: 18px; 
+}
+
+.h2 {
+padding-top: 64px;
+font-weight: 400;
+font-size: 24px;
+}
+.h4 {
+padding-top: 64px;
+font-weight: 400;
+font-size: 24px;
+}
+
+.conteudo {
+  padding-left: 64px;
+  font-family: 'Times New Roman';
+  font-weight: 10;
+  font-size: 20px;
+  text-align: auto;
+}
+
+.conteudo i {
+  font-size: x-large;
+}
+
+.box-check{
+font-size: larger;
+}
+.set-list{
+  font-size: 24px;
+}
+
+.tema button {
+color: #F7F7F7;
+align-self: flex-end;
+font-size: 18px;
+font-weight: 400;
+padding: 6px 12px;
+background: #2c3a4e;
+border-radius: 100px;
+border: 2PX solid #1C1C1C
+}
+.lateral-A{
+  padding-top: 0px;
+  padding-left: 30px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  position: relative;
+}
+.tema b {
+  padding-top: 0px;
+  padding-left: 25px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  position: relative;
+}
+
+.lateral-C {
+  padding-top: 0px;
+  padding-left: 50px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  position: relative;
+ 
+ 
+}
+.lateral-D {
+  padding-top: 0px;
+  padding-left: 50px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  position: relative; 
+}
+.btn-fora {
+  padding: auto;
+  color: #F7F7F7;
+  align-self: center;
+  font-size: 18px;
+  font-weight: 400;
+ }
+ .mapa {
+  list-style: none;
+  margin: 0%;
+  padding: 0%;
+  position: relative;
+  align-self: left;
+  justify-self: left;
+  max-width: 2500px;
+  max-height:780px;
+}
+
+textarea:invalid {
+  border: 2px dashed red;
+}
+
+textarea:valid {
+   border: 2px solid lime;
+}
+ .perfil{
+ max-width: 800px;
+ max-height: 800px;
+}
+/*   
+  .projetos-titulo {
+    list-style:none;
+    font-weight: 700;
+    font-size: 24px;
+}
+.projetos-item {
+    list-style-type: none;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 42px;
+}
+.projetos-item a{
+    color: #1C1C1C;
+    text-decoration: none;
+}
+
+
+*/
+
+.dark {
+    background:#F7F7F7;
+}
+
+.dark .container {
+    background:  #333439;
+    color: #F6F6F6;
+}
+
+.dark .projetos {
+    color: #1C1C1C;
+}
+.dark .tema button {
+    background: #1C1C1C;
+    color: #F7F7F7;
+    border: 2PX solid #f7f7f7;
+
+}
+
+  
+@media screen and (min-width:1330px) {}
+
+@media screen and (max-width:992px) {
+    .genius p.center {
+        top: 16%;
+        left: 0;
+        bottom: 0;
+        right: 32%;
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+
+}
